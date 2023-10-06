@@ -28,7 +28,6 @@ public class Registro extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro);
 
-        // se capturan los objetos de la interfaz grafica
         usuario = findViewById(R.id.editTextUsu);
         usuario_nombre = findViewById(R.id.editTextUsuNom);
         clave = findViewById(R.id.editTextClave);

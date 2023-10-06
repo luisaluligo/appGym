@@ -18,7 +18,6 @@ public class PantallaSplash extends AppCompatActivity {
             public void run() {
                 // Se invoca la Activity en memoria
                 // 1er parámetro el nombre de la clase para la Actitivy del Splash
-                // 2do parámetro la siguiente Activity que se mostrará después del Splash
                 Intent ActivitySplash = new Intent(PantallaSplash.this, MainActivity.class);
                 startActivity(ActivitySplash);
                 finish();

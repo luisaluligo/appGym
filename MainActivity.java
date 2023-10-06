@@ -156,7 +156,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "Error, usuario o clave incorrecta", Toast.LENGTH_SHORT).show();
             }
         } else {
-            Toast.makeText(this, "Error, usuario no encontrado", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Error, usuario no encontrado.", Toast.LENGTH_SHORT).show();
         }
     }
 

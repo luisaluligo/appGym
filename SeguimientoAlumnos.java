@@ -243,7 +243,7 @@ public class  SeguimientoAlumnos extends AppCompatActivity {
                 editor.putString("alumnos", jsonArray.toString());
                 editor.apply();
 
-                Toast.makeText(this, "Seguimiento de Medidas guardadas correctamente", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Seguimiento de Medidas guardadas correctamente.", Toast.LENGTH_SHORT).show();
                 finish();
                 return;
             } catch (JSONException e) {

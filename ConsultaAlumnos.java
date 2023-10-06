@@ -133,7 +133,7 @@ public class ConsultaAlumnos extends AppCompatActivity {
                 Toast.makeText(this, "Alumno no encontrado", Toast.LENGTH_SHORT).show();
             }
         } else {
-            Toast.makeText(this, "Por favor, ingrese un nombre para buscar", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Por favor,ingrese un nombre para buscar", Toast.LENGTH_SHORT).show();
         }
     }
 }

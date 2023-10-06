@@ -60,7 +60,6 @@ public class PrincipalActividad extends AppCompatActivity {
                 .setPositiveButton("Volver a inicio ", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        // Se finaliza la Activity
                         finish();
                     }
                 })

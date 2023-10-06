@@ -198,7 +198,7 @@ public class RegistroAlumnos extends AppCompatActivity {
             alumnos.add(alumno);
 
             guardarAlumnosEnSharedPreferences(alumnos);
-            Toast.makeText(RegistroAlumnos.this, "Alumno guardado en SharedPreferences", Toast.LENGTH_SHORT).show();
+            Toast.makeText(RegistroAlumnos.this, "Alumno guardado en SharedPreferences.", Toast.LENGTH_SHORT).show();
 
             finish();
         }

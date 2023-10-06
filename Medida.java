@@ -33,10 +33,6 @@ public class Medida {
         this.nombre = nombre;
     }
 
-    public void setUnidadMedida(String unidadMedida) {
-        this.unidadMedida = unidadMedida;
-    }
-
     public void setValor(String valor) {
         this.valor = valor;
     }
