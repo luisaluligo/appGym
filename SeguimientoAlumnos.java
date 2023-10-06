@@ -244,6 +244,7 @@ public class  SeguimientoAlumnos extends AppCompatActivity {
                 editor.apply();
 
                 Toast.makeText(this, "Seguimiento de Medidas guardadas correctamente", Toast.LENGTH_SHORT).show();
+                finish();
                 return;
             } catch (JSONException e) {
                 e.printStackTrace();

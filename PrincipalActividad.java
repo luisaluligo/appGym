@@ -1,7 +1,9 @@
 package com.luligosoft.appgym;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -47,6 +49,36 @@ public class PrincipalActividad extends AppCompatActivity {
         Intent iniActParametros = new Intent(this, MedidasAlumno.class);
         startActivity(iniActParametros);
     }
+
+    public void Salir(View v) {
+        // Se instancia el objeto tipo cuadro de diálogo
+        AlertDialog.Builder DialogoSalida = new AlertDialog.Builder(PrincipalActividad.this);
+
+        // Se configura el mensaje a mostrar
+        DialogoSalida.setMessage("¿Qué desea realizar?, seleccione una opción:")
+                .setCancelable(false) // No se permite que el usuario haga clic fuera del cuadro de diálogo (diálogo modal)
+                .setPositiveButton("Volver a inicio ", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        // Se finaliza la Activity
+                        finish();
+                    }
+                })
+                .setNegativeButton("Continuar en esta ventana", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        // Se cierra el cuadro de diálogo, y la aplicación sigue funcionando normal
+                        dialogInterface.cancel();
+                    }
+                });
+
+        // Se muestra el cuadro de diálogo
+        AlertDialog DialogoEmergente = DialogoSalida.create();
+        DialogoEmergente.setTitle("Diálogo emergente de verificación");
+        DialogoEmergente.show();
+    }
+
+
 
 }
 
